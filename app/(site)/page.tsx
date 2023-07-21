@@ -6,6 +6,7 @@ import PageContent from "./components/PageContent";
 export const revalidate = 0; // This means that this page will not be cashed , and the data will always be up to date
 export default async function Home() {
   const songs = await getSongs();
+
   return (
     <div
       className="
